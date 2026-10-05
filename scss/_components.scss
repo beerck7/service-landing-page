@@ -17,7 +17,7 @@
     background 0.2s,
     transform 0.2s;
   &:hover {
-    background: #c1e267;
+    background: #ff9d5c;
   }
   &:active {
     transform: translateY(1px);
@@ -26,7 +26,7 @@
     background: t.$ink;
     color: t.$white;
     &:hover {
-      background: #2d4945;
+      background: #393a40;
     }
   }
   &--small {
@@ -69,13 +69,13 @@
     height: 2.6rem;
     display: grid;
     place-items: center;
-    border-radius: 0.3rem;
+    border-radius: 0;
     background: t.$ink;
     color: t.$accent;
     font-size: 1.8rem;
   }
   &__accent {
-    color: #487446;
+    color: #b84117;
   }
   small {
     display: block;
@@ -92,7 +92,7 @@
       color: t.$ink;
     }
     small {
-      color: #c1cfca;
+      color: #c7c7cd;
     }
   }
 }
@@ -152,17 +152,15 @@
   }
 }
 .service-card {
-  background: t.$white;
-  border: 1px solid t.$line;
-  padding: 1.75rem;
-  border-radius: 0.35rem;
+  border-bottom: 1px solid t.$line;
+  padding: 2rem 0;
   position: relative;
   display: flex;
   flex-direction: column;
   &__number {
     position: absolute;
-    right: 1.75rem;
-    top: 1.75rem;
+    left: 0;
+    top: 1rem;
     font: 500 0.75rem/1 monospace;
     color: t.$muted;
   }
@@ -203,11 +201,13 @@
       width: 2.75rem;
       height: 2.75rem;
       border: 1px solid t.$line;
-      border-radius: 50%;
+      background: t.$ink;
+      color: t.$white;
       font-size: 1.25rem;
       text-decoration: none;
       &:hover {
         background: t.$accent;
+        color: t.$ink;
       }
     }
   }
@@ -218,7 +218,7 @@
   &__images {
     position: relative;
     overflow: hidden;
-    border-radius: 0.35rem;
+    border-radius: 0;
     img {
       width: 100%;
     }
@@ -279,7 +279,7 @@
       width: 100%;
       min-height: 2.75rem;
       margin: 0;
-      accent-color: #365f53;
+      accent-color: #b84117;
       cursor: ew-resize;
     }
   }
@@ -293,7 +293,8 @@
   padding: 1.5rem;
   border: 1px solid t.$line;
   background: white;
-  border-radius: 0.35rem;
+  border-top: 3px solid t.$ink;
+  border-radius: 0;
   &__field {
     margin-bottom: 1.2rem;
     label {
@@ -308,7 +309,7 @@
   textarea {
     width: 100%;
     min-height: 3rem;
-    border: 1px solid #899b90;
+    border: 1px solid #888990;
     background: t.$paper;
     border-radius: 0.2rem;
     padding: 0.7rem 0.8rem;

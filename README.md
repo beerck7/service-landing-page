@@ -70,6 +70,8 @@ Szerokość treści jest ograniczona do `76rem`. Sprawdzone szerokości: 360, 39
 
 ## SCSS & BEM
 
+Grafitowy hero, białe sekcje i pomarańczowe akcenty nawiązują do technicznego charakteru serwisu. Oferta na większych ekranach jest pokazana w poziomych wierszach, a na telefonie układa się w jedną kolumnę.
+
 ```text
 index.html
 scss/
