@@ -5,8 +5,27 @@ $soft: #eef2ec;
 $accent: #d2ec89;
 $line: #d9e0d8;
 $white: #fff;
-$spaces: (1: .25rem, 2: .5rem, 3: .75rem, 4: 1rem, 6: 1.5rem, 8: 2rem, 12: 3rem, 16: 4rem);
-$breakpoints: (tablet: 48rem, desktop: 64rem, wide: 80rem);
-@use 'sass:map';
-@function space($step) { @return map.get($spaces, $step); }
-@mixin above($size) { @media (min-width: map.get($breakpoints, $size)) { @content; } }
+$spaces: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  12: 3rem,
+  16: 4rem,
+);
+$breakpoints: (
+  tablet: 48rem,
+  desktop: 64rem,
+  wide: 80rem,
+);
+@use "sass:map";
+@function space($step) {
+  @return map.get($spaces, $step);
+}
+@mixin above($size) {
+  @media (min-width: map.get($breakpoints, $size)) {
+    @content;
+  }
+}

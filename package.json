@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "styles": "sass scss/main.scss assets/css/main.css --style=compressed --no-source-map",
@@ -12,5 +14,7 @@
     "check": "node scripts/check.mjs",
     "test": "node --test"
   },
-  "devDependencies": { "sass": "^1.93.0" }
+  "devDependencies": {
+    "sass": "^1.93.0"
+  }
 }
